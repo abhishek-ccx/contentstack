@@ -25,7 +25,7 @@ const Footer = () => {
 
       // Handle the response data as needed
       const data = response?.data?.entry;
-
+        console.log("footer", data)
       setFooterData(data);
     } catch (error) {
       // Handle errors
@@ -38,9 +38,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div
-      className="bg-[#42454A]"
-    >
+    <div className="bg-[#42454A]">
       <div className="flex justify-between">
         <div className="">
           <img
